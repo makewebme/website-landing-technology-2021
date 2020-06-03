@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -41,4 +41,16 @@ button {
 input {
   border: 0;
   outline: 0;
+}
+
+.cont {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Roboto';
+  text-align: center;
 }

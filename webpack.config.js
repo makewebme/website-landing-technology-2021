@@ -21,7 +21,7 @@ module.exports = {
     new HtmlWebpackPlugin({ template: 'pug/_index.pug', filename: 'index.html' }),
     new HtmlWebpackPugPlugin(),
 
-    new MiniCssExtractPlugin({ filename: `[name].css` }), // Generating CSS
+    new MiniCssExtractPlugin({ filename: 'style.css' }), // Generating CSS
     new CopyWebpackPlugin([{ from: 'img', to: 'img' }]) // Copy images
   ],
 

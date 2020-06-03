@@ -1,0 +1,141 @@
+.section-header {
+  background-image: url('img/section-header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  color: #fff;
+  padding-top: 105px;
+  background-color: #282828;
+  position: relative;
+
+  @media (max-width: 2560px) {
+    background-size: cover;
+  }
+
+  .top-bar {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .cont {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 50px;
+      padding-right: 25px;
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 17px;
+        }
+      }
+
+      .about {
+        font-size: 17px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .main-heading {
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .sub-heading {
+    color: #f3c500;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .desc {
+    text-align: center;
+    max-width: 250px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 auto 45px;
+  }
+
+  .key-adv {
+    display: flex;
+    margin: 0 auto 15px;
+    justify-content: center;
+    font-weight: 300;
+
+    .adv-item {
+      font-size: 18px;
+      line-height: 26px;
+      padding-left: 65px;
+      position: relative;
+
+      &:nth-child(1) {
+        width: 235px;
+        margin-right: 55px;
+        margin-left: 103px;
+      }
+
+      &:nth-child(2) {
+        width: 255px;
+        margin-right: 40px;
+      }
+
+      &:nth-child(3) {
+        width: 255px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        height: 36px;
+        width: 36px;
+        background-color: #fcc033;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: 7px;
+        border: 2px solid #000;
+        border-top: 0;
+        border-right: 0;
+        transform: rotate(-45deg);
+        width: 18px;
+        height: 10px;
+      }
+    }
+  }
+
+  .btn-get-info {
+    background-color: #fcc033;
+    border-radius: 35px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    font-weight: 100;
+    border: 0;
+    padding: 0 32px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(50%);
+
+    .bold {
+      font-weight: 400;
+    }
+  }
+}
