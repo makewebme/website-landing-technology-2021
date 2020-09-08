@@ -1,0 +1,107 @@
+.section-apm {
+  margin-bottom: 70px;
+
+  .main-heading {
+    margin-top: 0;
+  }
+
+  .apm-items {
+    display: flex;
+
+    .apm-item {
+      width: 16.666666%;
+
+      .color-box {
+        height: 195px;
+        padding-top: 127px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 30px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-repeat: no-repeat;
+          background-position: 50% 25px;
+        }
+      }
+
+      &:nth-child(1) {
+        .color-box {
+          background-color: #e30016;
+
+          &:before {
+            background-image: url('img/apm-1.png');
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .color-box {
+          background-color: #fc5620;
+
+          &:before {
+            background-image: url('img/apm-2.png');
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .color-box {
+          background-color: #fcc033;
+          color: #000;
+
+          &:before {
+            background-image: url('img/apm-3.png');
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .color-box {
+          background-color: #0b9a4c;
+
+          &:before {
+            background-image: url('img/apm-4.png');
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        .color-box {
+          background-color: #123c52;
+
+          &:before {
+            background-image: url('img/apm-5.png');
+          }
+        }
+      }
+
+      &:nth-child(6) {
+        .color-box {
+          background-color: #007a78;
+
+          &:before {
+            background-image: url('img/apm-6.png');
+          }
+        }
+      }
+    }
+
+    .desc {
+      padding: 0 15px;
+      color: #232323;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+  }
+}
