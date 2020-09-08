@@ -1,0 +1,19 @@
+.section-save-time {
+  padding-top: 90px;
+  padding-left: 210px;
+  padding-bottom: 70px;
+  background-image: url('img/clock.png');
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 28px);
+
+  .main-heading {
+    text-align: left;
+    max-width: 240px;
+  }
+
+  .desc {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 730px;
+  }
+}
