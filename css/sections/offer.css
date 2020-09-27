@@ -6,10 +6,6 @@
     padding-left: 250px;
   }
 
-  .red {
-    color: #ea4b35;
-  }
-
   .main-heading {
     text-align: left;
     margin-top: 0;
@@ -21,6 +17,10 @@
 
   .technology {
     padding: 80px 0 55px;
+
+    .main-heading {
+      max-width: 680px;
+    }
 
     .sub-heading {
       font-size: 24px;

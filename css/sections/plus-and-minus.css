@@ -1,0 +1,54 @@
+.section-plus-and-minus {
+  .cont {
+    padding-left: 250px;
+  }
+
+  .main-heading {
+    text-align: left;
+  }
+
+  ul {
+    line-height: 26px;
+    font-size: 18px;
+    max-width: 755px;
+    margin-bottom: 65px;
+
+    li {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: -26px;
+        width: 14px;
+        height: 3px;
+        background-color: #ea4b35;
+      }
+
+      & + li {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .success {
+    background-color: #1aaf5d;
+    padding: 50px 0;
+
+    .cont {
+      background-image: url('img/check.png');
+      background-repeat: no-repeat;
+      background-position: 90px 50%;
+
+      .desc {
+        max-width: 600px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

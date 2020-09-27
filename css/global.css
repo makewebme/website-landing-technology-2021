@@ -56,3 +56,11 @@ input {
   font-family: 'Roboto';
   text-align: center;
 }
+
+.text-red {
+  color: #ea4b35;
+}
+
+.text-bold {
+  font-weight: 500;
+}
