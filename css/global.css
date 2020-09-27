@@ -36,6 +36,8 @@ p {
 button {
   outline: 0;
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 
 input {

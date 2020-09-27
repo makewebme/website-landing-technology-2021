@@ -1,0 +1,58 @@
+.section-offer {
+  text-align: left;
+  font-size: 18px;
+
+  .cont {
+    padding-left: 250px;
+  }
+
+  .red {
+    color: #ea4b35;
+  }
+
+  .main-heading {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .desc {
+    line-height: 26px;
+  }
+
+  .technology {
+    padding: 80px 0 55px;
+
+    .sub-heading {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .warning {
+    background-color: #e7e7e7;
+
+    .cont {
+      padding-top: 55px;
+      padding-bottom: 75px;
+      background-image: url('img/exclamation.png');
+      background-repeat: no-repeat;
+      background-position: 65px center;
+    }
+  }
+
+  .scheme {
+    background-color: #372d3b;
+    padding: 40px 0 45px;
+    color: #fff;
+
+    .btn-more {
+      padding: 0 30px;
+      line-height: 50px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 300;
+      color: inherit;
+      background-color: #aa3c57;
+    }
+  }
+}
