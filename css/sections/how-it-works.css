@@ -1,0 +1,48 @@
+.section-how-it-works {
+  background-color: #372d3b;
+  padding-top: 50px;
+  color: #fff;
+  font-size: 24px;
+
+  .main-heading {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .items-wrapper {
+    display: flex;
+    padding-bottom: 100px;
+
+    .item {
+      width: 33.333333%;
+      padding-top: 260px;
+      text-align: center;
+      font-weight: 300;
+      background-position: center top;
+      background-repeat: no-repeat;
+
+      &:nth-child(1) {
+        background-image: url('img/how-it-works-item-1.png');
+      }
+
+      &:nth-child(2) {
+        background-image: url('img/how-it-works-item-2.png');
+      }
+
+      &:nth-child(3) {
+        background-image: url('img/how-it-works-item-3.png');
+      }
+
+      .desc {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .note {
+    background-color: #b03d58;
+    text-align: center;
+    padding: 35px 0 40px;
+    font-weight: 300;
+  }
+}
