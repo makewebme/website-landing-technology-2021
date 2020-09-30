@@ -1,0 +1,62 @@
+.section-request-form {
+  background-image: url('img/request-form-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+
+  .cont {
+    padding: 330px 0 50px;
+    position: relative;
+
+    .form-wrapper {
+      padding: 39px;
+      white-space: nowrap;
+      background-color: #f3c500;
+      display: flex;
+      flex-direction: column;
+      width: 360px;
+      position: absolute;
+      top: -148px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .heading {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+
+      .input {
+        padding-left: 40px;
+        padding-right: 14px;
+        line-height: 46px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-position: 14px 50%;
+      }
+
+      .input-name { background-image: url('img/request-form-icon-1.png'); }
+      .input-company { background-image: url('img/request-form-icon-2.png'); background-position-x: 12px; }
+      .inupt-phone { background-image: url('img/request-form-icon-3.png'); background-position-x: 13px; }
+      .input-email { background-image: url('img/request-form-icon-4.png'); }
+
+      .btn-send {
+        background-color: #01a185;
+        height: 46px;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+
+    .advantages-wrapper {
+      justify-content: space-between;
+      padding: 0px 82px 0 0;
+  
+      .adv-item {
+        margin: 0;
+      }
+    }
+  }
+}

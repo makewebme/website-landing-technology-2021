@@ -1,0 +1,46 @@
+.section-footer {
+  background-color: #212121;
+  padding: 50px 0;
+
+  .cont {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+
+    .logo, .phone {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      > * {
+        margin-right: 30px;
+      }
+    }
+
+    .phone {
+      color: #f3c500;
+    }
+
+    .email {
+      background-repeat: no-repeat;
+      background-image: url('img/icon-mail.png');
+      background-position: 0 50%;
+      padding-left: 25px;
+    }
+
+    .studio {
+      display: flex;
+
+      > * {
+        margin-left: 10px;
+      }
+    }
+  }
+}

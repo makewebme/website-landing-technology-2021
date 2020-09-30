@@ -1,5 +1,7 @@
 @import 'global.css';
 
+@import 'includes/advantages.css';
+
 @import 'sections/header.css';
 @import 'sections/save-time.css';
 @import 'sections/apm.css';
@@ -8,3 +10,5 @@
 @import 'sections/offer.css';
 @import 'sections/plus-and-minus.css';
 @import 'sections/reviews.css';
+@import 'sections/request-form.css';
+@import 'sections/footer.css';
