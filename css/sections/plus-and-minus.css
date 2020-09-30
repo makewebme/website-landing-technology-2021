@@ -7,13 +7,13 @@
     text-align: left;
   }
 
-  ul {
+  .plus-minus-wrapper {
     line-height: 26px;
     font-size: 18px;
     max-width: 755px;
     margin-bottom: 65px;
 
-    li {
+    .item {
       position: relative;
 
       &:before {
@@ -26,7 +26,7 @@
         background-color: #ea4b35;
       }
 
-      & + li {
+      & + .item {
         margin-top: 35px;
       }
     }
