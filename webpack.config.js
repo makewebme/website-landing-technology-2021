@@ -58,20 +58,23 @@ module.exports = {
 
           // PostCSS with plugins
           {
-            loader: require.resolve('postcss-loader'),
+            loader: 'postcss-loader',
             options: {
-              ident: 'postcss',
-              plugins: () => [
-                require('postcss-nested'),
-                require('postcss-flexbugs-fixes'),
-                require('postcss-preset-env')({
-                  autoprefixer: {
-                    flexbox: 'no-2009',
-                  },
-                  stage: 3,
-                })
-              ],
-              sourceMap: true
+              postcssOptions: {
+                plugins: [
+                  require('postcss-nested'),
+                  require('postcss-simple-vars'),
+                  require('postcss-flexbugs-fixes'),
+                  require('postcss-preset-env')({
+                    autoprefixer: {
+                      flexbox: 'no-2009',
+                    },
+                    stage: 3,
+                  })
+                ],
+                ident: 'postcss',
+                sourceMap: true
+              }
             }
           }
         ]
