@@ -43,6 +43,10 @@
       .about {
         font-size: 17px;
         font-weight: 300;
+
+        @media(max-width: $xxl) {
+          background-color: red;
+        }
       }
     }
   }

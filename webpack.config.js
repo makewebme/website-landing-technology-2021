@@ -63,7 +63,15 @@ module.exports = {
               postcssOptions: {
                 plugins: [
                   require('postcss-nested'),
-                  require('postcss-simple-vars'),
+                  require('postcss-simple-vars')({
+                    variables: {
+                      $xxl: '1400px',
+                      $xl: '1200px',
+                      $lg: '992px',
+                      $md: '768px',
+                      $sm: '576px'
+                    }
+                  }),
                   require('postcss-flexbugs-fixes'),
                   require('postcss-preset-env')({
                     autoprefixer: {
