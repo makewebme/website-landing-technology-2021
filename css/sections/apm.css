@@ -7,9 +7,28 @@
 
   .apm-items {
     display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $sm) {
+      padding: 0 20px;
+    }
 
     .apm-item {
       width: 16.666666%;
+
+      @media (max-width: $xl) {
+        width: 33.333333%;
+        margin-bottom: 50px;
+      }
+
+      @media (max-width: $md) {
+        width: 50%;
+      }
+
+      @media (max-width: 390px) {
+        width: 100%;
+        padding: 0 20px;
+      }
 
       .color-box {
         height: 195px;
@@ -102,6 +121,10 @@
       font-weight: 300;
       line-height: 22px;
       margin-bottom: 0;
+
+      @media (max-width: 390px) {
+        padding: 0;
+      }
     }
   }
 }
