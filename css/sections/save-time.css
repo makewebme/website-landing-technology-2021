@@ -6,14 +6,29 @@
   background-repeat: no-repeat;
   background-position: left calc(50% + 28px);
 
+  @media (max-width: $sm) {
+    background-position: center 40px;
+    padding-top: 260px;
+    padding-left: 0;
+  }
+
   .main-heading {
     text-align: left;
     max-width: 240px;
+
+    @media (max-width: $sm) {
+      max-width: initial;
+      text-align: center;
+    }
   }
 
   .desc {
     font-size: 18px;
     line-height: 26px;
     max-width: 730px;
+
+    @media (max-width: $sm) {
+      padding: 0 40px;
+    }
   }
 }

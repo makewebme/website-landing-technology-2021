@@ -53,6 +53,10 @@ input {
   font-weight: 100;
   font-family: 'Roboto';
   text-align: center;
+
+  @media (max-width: $sm) {
+    padding: 0 20px;
+  }
 }
 
 .text-red {
@@ -70,23 +74,23 @@ input {
   width: 1320px;
   margin: 0 auto;
 
-  @media(max-width: $xxl) {
+  @media (max-width: $xxl) {
     width: 1120px;
   }
 
-  @media(max-width: $xl) {
+  @media (max-width: $xl) {
     width: 912px;
   }
 
-  @media(max-width: $lg) {
+  @media (max-width: $lg) {
     width: 688px;
   }
 
-  @media(max-width: $md) {
+  @media (max-width: $md) {
     width: 496px;
   }
 
-  @media(max-width: $sm) {
+  @media (max-width: $sm) {
     width: 100%;
   }
 }
