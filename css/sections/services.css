@@ -15,6 +15,10 @@
     line-height: 26px;
     counter-reset: services-counter;
 
+    @media (max-width: $lg) {
+      flex-wrap: wrap;
+    }
+
     .service {
       width: 33.333333%;
       border: 1px solid #000;
@@ -22,6 +26,19 @@
       padding: 90px 16px 0;
       position: relative;
       counter-increment: services-counter;
+
+      @media (max-width: $xl) {
+        width: 50%;
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+      }
+
+      @media (max-width: $sm) {
+        height: 280px;
+        border: 0;
+      }
 
       &:before {
         content: '0'counter(services-counter);
@@ -34,15 +51,21 @@
         font-weight: 900;
         opacity: 0.4;
         z-index: 0;
+
+        @media (max-width: $sm) {
+          color: #687c87;
+        }
       }
 
-      &:hover {
-        background-color: #fcc033;
-        cursor: pointer;
-        color: #000;
+      @media (min-width: $sm_) {
+        &:hover {
+          background-color: #fcc033;
+          cursor: pointer;
+          color: #000;
 
-        &:before {
-          color: #f9f9f9;
+          &:before {
+            color: #f9f9f9;
+          }
         }
       }
 
@@ -64,21 +87,57 @@
 
       /* CASE 2 */
 
-      &:nth-child(1),
-      &:nth-child(4) {
-        border-right: 0;
+      @media (min-width: $xl_) {
+        &:nth-child(1),
+        &:nth-child(4) {
+          border-right: 0;
+        }
+
+        &:nth-child(3),
+        &:nth-child(6) {
+          border-left: 0;
+        }
+
+        &:nth-child(3) ~ * {
+          border-top: 0;
+        }
       }
 
-      &:nth-child(3),
-      &:nth-child(6) {
-        border-left: 0;
+      @media (min-width: $md_) and (max-width: $xl) {
+        &:nth-child(even) {
+          border-left: 0;
+        }
+
+        &:nth-child(6) {
+          border-bottom: 1px solid #000;
+        }
       }
 
-      &:nth-child(3) ~ * {
-        border-top: 0;
+      @media (max-width: $md) {
+        & {
+          border-bottom: 0;
+        }
+
+        &:nth-child(6) {
+          border-bottom: 1px solid #000;
+        }
       }
 
+      @media (max-width: $sm) {
+        &:nth-child(odd) {
+          background-color: #fcc033;
+          cursor: pointer;
+          color: #000;
 
+          &:before {
+            color: #f9f9f9;
+          }
+        }
+
+        &:nth-child(6) {
+          border: 0;
+        }
+      }
 
       .service-heading {
         font-weight: 600;

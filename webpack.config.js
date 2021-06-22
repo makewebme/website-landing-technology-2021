@@ -66,10 +66,15 @@ module.exports = {
                   require('postcss-simple-vars')({
                     variables: {
                       $xxl: '1400px',
+                      $xxl_: '1399px',
                       $xl: '1200px',
+                      $xl_: '1199px',
                       $lg: '992px',
+                      $lg_: '991px',
                       $md: '768px',
-                      $sm: '576px'
+                      $md_: '767px',
+                      $sm: '576px',
+                      $sm_: '575px'
                     }
                   }),
                   require('postcss-flexbugs-fixes'),
