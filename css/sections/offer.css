@@ -13,10 +13,34 @@
 
   .desc {
     line-height: 26px;
+
+    @media (max-width: $sm) {
+      padding: 0 20px;
+    }
   }
 
   .technology {
     padding: 80px 0 55px;
+
+    .cont {
+      @media (max-width: $xxl) {
+        padding-left: 166px;
+      }
+
+      @media (max-width: $xl) {
+        padding-left: 55px;
+      }
+
+      @media (max-width: $lg) {
+        padding-left: 0;
+        position: relative;
+        left: -50px;
+      }
+
+      @media (max-width: 850px) {
+        left: auto;
+      }
+    }
 
     .main-heading {
       max-width: 680px;
@@ -25,6 +49,10 @@
     .sub-heading {
       font-size: 24px;
       font-weight: 500;
+
+      @media (max-width: $sm) {
+        padding: 0 20px;
+      }
     }
   }
 
@@ -37,6 +65,11 @@
       background-image: url('img/exclamation.png');
       background-repeat: no-repeat;
       background-position: 65px center;
+
+      @media (max-width: $md) {
+        background-position: center 40px;
+        padding: 230px 0 25px;
+      }
     }
   }
 
@@ -44,6 +77,30 @@
     background-color: #372d3b;
     padding: 40px 0 45px;
     color: #fff;
+
+    .cont {
+      @media (max-width: $lg) {
+        padding-left: 80px;
+      }
+
+      @media (max-width: $md) {
+        padding-left: 0;
+      }
+
+      @media (max-width: $sm) {
+        padding-left: 0;
+      }
+    }
+
+    .main-heading {
+      @media (max-width: 490px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 380px) {
+        font-size: 24px;
+      }
+    }
 
     .btn-more {
       padding: 0 30px;
@@ -53,6 +110,10 @@
       font-weight: 300;
       color: inherit;
       background-color: #aa3c57;
+
+      @media (max-width: $sm) {
+        margin-left: 20px;
+      }
     }
   }
 }
