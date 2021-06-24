@@ -13,6 +13,11 @@
     display: flex;
     padding-bottom: 100px;
 
+    @media (max-width: $md) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .item {
       width: 33.333333%;
       padding-top: 260px;
@@ -21,20 +26,60 @@
       background-position: center top;
       background-repeat: no-repeat;
 
+      @media (max-width: $xl) {
+        padding-top: 200px;
+      }
+
+      @media (max-width: $lg) {
+        padding-top: 180px;
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+        padding-top: 260px;
+      }
+
+      + .item {
+        @media (max-width: $md) {
+          margin-top: 80px;
+        }
+      }
+
       &:nth-child(1) {
         background-image: url('img/how-it-works-item-1.png');
       }
 
       &:nth-child(2) {
         background-image: url('img/how-it-works-item-2.png');
+
+        @media (max-width: $md) {
+          background-size: 240px auto;
+          padding-top: 280px;
+        }
       }
 
       &:nth-child(3) {
         background-image: url('img/how-it-works-item-3.png');
       }
 
+      @media (max-width: $xl) {
+        background-size: auto 160px;
+      }
+
+      @media (max-width: $lg) {
+        background-size: auto 140px;
+      }
+
+      @media (max-width: $md) {
+        background-size: auto 220px;
+      }
+
       .desc {
         margin-bottom: 0;
+
+        @media (max-width: $sm) {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -44,5 +89,22 @@
     text-align: center;
     padding: 35px 0 40px;
     font-weight: 300;
+    padding: 30px 20px;
+    line-height: 1.6;
+
+    .inner {
+      @media (max-width: 850px) {
+        max-width: 580px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 480px) {
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      font-size: 22px;
+    }
   }
 }
