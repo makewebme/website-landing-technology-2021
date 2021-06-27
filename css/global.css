@@ -67,6 +67,7 @@ input {
 
   @media (max-width: $sm) {
     padding: 0 20px;
+    font-size: 34px;
   }
 }
 

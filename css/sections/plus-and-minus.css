@@ -1,33 +1,47 @@
 .section-plus-and-minus {
-  .cont {
-    padding-left: 250px;
-  }
-
   .main-heading {
     text-align: left;
   }
 
-  .plus-minus-wrapper {
-    line-height: 26px;
-    font-size: 18px;
-    max-width: 755px;
-    margin-bottom: 65px;
+  .plus-and-minus {
+    .cont {
+      padding-left: 250px;
 
-    .item {
-      position: relative;
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 12px;
-        left: -26px;
-        width: 14px;
-        height: 3px;
-        background-color: #ea4b35;
+      @media (max-width: $lg) {
+        padding-left: 80px;
       }
+  
+      @media (max-width: $md) {
+        padding-left: 0;
+      }
+    }
 
-      & + .item {
-        margin-top: 35px;
+    .plus-minus-wrapper {
+      line-height: 26px;
+      font-size: 18px;
+      max-width: 755px;
+      margin-bottom: 65px;
+
+      .item {
+        position: relative;
+
+        @media (max-width: $sm) {
+          padding: 0 20px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 12px;
+          left: -26px;
+          width: 14px;
+          height: 3px;
+          background-color: #ea4b35;
+        }
+
+        & + .item {
+          margin-top: 35px;
+        }
       }
     }
   }
@@ -37,17 +51,43 @@
     padding: 50px 0;
 
     .cont {
+      padding-left: 250px;
       background-image: url('img/check.png');
       background-repeat: no-repeat;
       background-position: 90px 50%;
 
-      .desc {
-        max-width: 600px;
-        color: #fff;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        margin-bottom: 0;
+      @media (max-width: $lg) {
+        padding-left: 110px;
+        background-size: 70px;
+        background-position: 21px 50%;
+      }
+
+      @media (max-width: $md) {
+        padding-left: 90px;
+        background-position: 0 50%;
+      }
+
+      @media (max-width: $sm) {
+        background-position: center 0;
+        padding: 110px 0 25px;
+        background-size: initial;
+      }
+    }
+
+    .desc {
+      max-width: 600px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-bottom: 0;
+
+      @media (max-width: $sm) {
+        padding: 0 20px;
+      }
+
+      @media (max-width: 380px) {
+        font-size: 20px;
       }
     }
   }
