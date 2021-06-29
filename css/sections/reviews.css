@@ -2,6 +2,10 @@
   padding-top: 65px;
   padding-bottom: 100px;
 
+  @media (max-width: $sm) {
+    padding-bottom: 50px;
+  }
+
   .main-heading {
     margin-top: 0;
     margin-bottom: 57px;
@@ -13,12 +17,27 @@
     padding: 0 180px;
     position: relative;
 
+    @media (max-width: $md) {
+      background-color: #e7e7e7;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: $sm) {
+      margin: 0 20px;
+    }
+
     + .review {
       margin-top: 50px;
     }
 
     &:nth-child(even) {
       flex-direction: row-reverse;
+
+      @media (max-width: $md) {
+        flex-direction: column;
+      }
     }
 
     .avatar {
@@ -27,6 +46,13 @@
       top: 50%;
       transform: translateY(-50%);
       border-radius: 50%;
+
+      @media (max-width: $md) {
+        width: 200px;
+        position: static;
+        transform: none;
+        margin-bottom: 30px;
+      }
     }
 
     &:nth-child(even) .avatar {
@@ -40,11 +66,21 @@
       padding: 35px 53px;
       position: relative;
 
-      
+      @media (max-width: $md) {
+        padding: 0;
+      }
 
       .name {
         font-weight: 700;
         margin-bottom: 17px;
+
+        @media (max-width: $md) {
+          text-align: center;
+        }
+
+        @media (max-width: $sm) {
+          text-align: left;
+        }
       }
 
       .text {
@@ -65,6 +101,10 @@
         border-style: solid;
         border-width: 13px 23px 13px 0;
         border-color: transparent #e7e7e7 transparent transparent;
+
+        @media (max-width: $md) {
+          content: none;
+        }
       }
     }
 
@@ -80,6 +120,10 @@
         border-style: solid;
         border-width: 13px 0 13px 23px;
         border-color: transparent transparent transparent #e7e7e7;
+
+        @media (max-width: $md) {
+          content: none;
+        }
       }
     }
   }
