@@ -2,13 +2,24 @@
   background-color: #212121;
   padding: 50px 0;
 
+  @media (max-width: $sm) {
+    padding: 50px 20px;
+  }
+
   .cont {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: #fff;
     align-items: center;
     font-size: 18px;
     font-weight: 300;
+
+    > * {
+      @media (max-width: $lg) {
+        width: 50%;
+      }
+    }
 
     .logo, .phone {
       font-size: 24px;
@@ -22,10 +33,28 @@
       > * {
         margin-right: 30px;
       }
+
+      @media (max-width: $lg) {
+        order: 1;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+      }
     }
 
     .phone {
       color: #f3c500;
+
+      @media (max-width: $lg) {
+        order: 3;
+      }
+
+      @media (max-width: 520px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
 
     .email {
@@ -33,6 +62,14 @@
       background-image: url('img/icon-mail.png');
       background-position: 0 50%;
       padding-left: 25px;
+
+      @media (max-width: $lg) {
+        order: 4;
+      }
+
+      @media (max-width: 520px) {
+        width: 100%;
+      }
     }
 
     .studio {
@@ -40,6 +77,28 @@
 
       > * {
         margin-left: 10px;
+      }
+
+      @media (max-width: $lg) {
+        order: 2;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+      }
+
+      @media (max-width: 342px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      img {
+        @media (max-width: 342px) {
+          max-width: fit-content;
+          margin-top: 10px;
+          margin-left: 0;
+        }
       }
     }
   }
