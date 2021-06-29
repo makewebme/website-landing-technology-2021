@@ -4,9 +4,21 @@
   background-repeat: no-repeat;
   margin-top: 150px;
 
+  @media (max-width: $sm) {
+    margin-top: 0;
+  }
+
   .cont {
     padding: 330px 0 50px;
     position: relative;
+
+    @media (max-width: $sm) {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     .form-wrapper {
       padding: 39px;
@@ -20,11 +32,26 @@
       left: 50%;
       transform: translateX(-50%);
 
+      @media (max-width: $sm) {
+        transform: none;
+        position: static;
+      }
+
+      @media (max-width: 360px) {
+        width: 100%;
+        padding: 35px 20px;
+      }
+
       .heading {
         font-size: 20px;
         font-weight: 700;
         margin-top: 0;
         margin-bottom: 30px;
+
+        @media (max-width: 360px) {
+          white-space: initial;
+          font-size: 26px;
+        }
       }
 
       .input {
@@ -53,7 +80,18 @@
     .advantages-wrapper {
       justify-content: space-between;
       padding: 0px 82px 0 0;
-  
+
+      @media (max-width: $sm) {
+        padding: 0;
+        width: 360px;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 360px) {
+        width: 100%;
+        padding: 0 20px;
+      }
+
       .adv-item {
         margin: 0;
       }
