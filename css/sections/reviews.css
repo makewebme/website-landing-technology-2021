@@ -46,6 +46,7 @@
       top: 50%;
       transform: translateY(-50%);
       border-radius: 50%;
+      width: 140px;
 
       @media (max-width: $md) {
         width: 200px;

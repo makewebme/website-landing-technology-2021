@@ -1,17 +1,17 @@
 require('../css/_style.css')
 
-fetch('/comments.json')
+fetch('https://gorest.co.in/public-api/products')
   .then((res) => res.json())
-  .then(({ comments }) => {
+  .then(({ data: comments }) => {
     const reviewTmpl = document.querySelector('#review')
     const reviewsItems = document.querySelector('.reviews-items')
 
     comments.forEach((c) => {
       const review = reviewTmpl.content.cloneNode(true)
 
-      review.querySelector('img').src = c.img
+      review.querySelector('img').src = c.image
       review.querySelector('.name').innerText = c.name
-      review.querySelector('.text').innerText = c.text
+      review.querySelector('.text').innerText = c.description
 
       reviewsItems.appendChild(review)
     })
