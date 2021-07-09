@@ -13,14 +13,11 @@
 
   .desc {
     line-height: 26px;
-
-    @media (max-width: $sm) {
-      padding: 0 20px;
-    }
   }
 
   .technology {
-    padding: 80px 0 55px;
+    padding-top: 80px;
+    padding-top: 55px;
 
     .cont {
       @media (max-width: $xxl) {
@@ -31,14 +28,8 @@
         padding-left: 55px;
       }
 
-      @media (max-width: $lg) {
-        padding-left: 0;
-        position: relative;
-        left: -50px;
-      }
-
-      @media (max-width: 850px) {
-        left: auto;
+      @media (max-width: $md) {
+        padding-left: 20px;
       }
     }
 
@@ -49,10 +40,6 @@
     .sub-heading {
       font-size: 24px;
       font-weight: 500;
-
-      @media (max-width: $sm) {
-        padding: 0 20px;
-      }
     }
   }
 
@@ -68,7 +55,7 @@
 
       @media (max-width: $md) {
         background-position: center 40px;
-        padding: 230px 0 25px;
+        padding: 230px 20px 25px;
       }
     }
   }
@@ -84,7 +71,8 @@
       }
 
       @media (max-width: $md) {
-        padding-left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
 

@@ -4,7 +4,7 @@
   padding-bottom: 70px;
   background-image: url('img/clock.png');
   background-repeat: no-repeat;
-  background-position: left calc(50% + 28px);
+  background-position: 20px calc(50% + 28px);
 
   @media (max-width: $sm) {
     background-position: center 40px;
@@ -28,7 +28,7 @@
     max-width: 730px;
 
     @media (max-width: $sm) {
-      padding: 0 40px;
+      padding: 0 20px;
     }
   }
 }

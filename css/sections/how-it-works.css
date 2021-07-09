@@ -35,8 +35,9 @@
       }
 
       @media (max-width: $md) {
+        padding-left: 20px;
+        padding-right: 20px;
         width: 100%;
-        padding-top: 260px;
       }
 
       + .item {
@@ -47,6 +48,11 @@
 
       &:nth-child(1) {
         background-image: url('img/how-it-works-item-1.png');
+
+        @media (max-width: $md) {
+          background-size: auto 180px;
+          padding-top: 215px;
+        }
       }
 
       &:nth-child(2) {
@@ -60,6 +66,10 @@
 
       &:nth-child(3) {
         background-image: url('img/how-it-works-item-3.png');
+
+        @media (max-width: $md) {
+          padding-top: 260px;
+        }
       }
 
       @media (max-width: $xl) {

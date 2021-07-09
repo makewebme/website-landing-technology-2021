@@ -151,6 +151,11 @@
       align-items: center;
     }
 
+    @media (max-width: 430px) {
+      width: calc(100% - 20px);
+      align-items: flex-end;
+    }
+
     .adv-item {
       font-size: 18px;
       line-height: 26px;
