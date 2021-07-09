@@ -79,7 +79,7 @@
 
     .advantages-wrapper {
       justify-content: space-between;
-      padding: 0px 82px 0 0;
+      padding: 0 20px 82px;
 
       @media (max-width: $sm) {
         padding: 0;
