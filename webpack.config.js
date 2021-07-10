@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 
 module.exports = {
@@ -22,13 +23,26 @@ module.exports = {
     new HtmlWebpackPugPlugin(),
 
     new MiniCssExtractPlugin({ filename: 'style.css' }), // Generating CSS
+
     new CopyWebpackPlugin([{ from: 'img', to: 'img' }]), // Copy images
     new CopyWebpackPlugin([{ from: 'comments.json', to: 'comments.json' }]) // Copy comments.json
   ],
 
   optimization: {
     minimizer: [
-      new OptimizeCSSAssetsPlugin({})
+      new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.css$/g,
+        cssProcessor: require('cssnano'),
+        cssProcessorPluginOptions: {
+          preset: [
+            'default', {
+              discardComments: { removeAll: true }
+            }
+          ]
+        }
+      }),
+
+      new UglifyJsPlugin()
     ],
   },
 

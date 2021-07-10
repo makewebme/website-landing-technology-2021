@@ -66,7 +66,7 @@
 
       .input-name { background-image: url('img/request-form-icon-1.png'); }
       .input-company { background-image: url('img/request-form-icon-2.png'); background-position-x: 12px; }
-      .inupt-phone { background-image: url('img/request-form-icon-3.png'); background-position-x: 13px; }
+      .input-phone { background-image: url('img/request-form-icon-3.png'); background-position-x: 13px; }
       .input-email { background-image: url('img/request-form-icon-4.png'); }
 
       .btn-send {
