@@ -1,8 +1,20 @@
 fetch('https://gorest.co.in/public-api/products')
-  .then((res) => res.json())
-  .then(({ data: comments }) => {
-    const reviewTmpl = document.querySelector('#review')
+  .then((res) => {
+    if (res.status === 200) {
+      return res.json()
+    }
+  })
+  .then((res) => {
     const reviewsItems = document.querySelector('.reviews-items')
+
+    if (!res) {
+      reviewsItems.innerText = 'Ошибка подгрузки комментариев'
+      return
+    }
+
+    const { data: comments } = res
+
+    const reviewTmpl = document.querySelector('#review')
 
     comments.forEach((c) => {
       const review = reviewTmpl.content.cloneNode(true)
